@@ -1,0 +1,24 @@
+{
+  "name": "genius-snippets",
+  "displayName": "Genius Snippets",
+  "description": "Uma coleção de snippets para auxiliar no dia a dia de trabalho Genius.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javscript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/global-snippets.json"
+      }
+    ]
+  }
+}

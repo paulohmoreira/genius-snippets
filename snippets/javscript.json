@@ -1,0 +1,54 @@
+{
+	"Delay pequeno": {
+		"scope": "javascript,typescript",
+		"prefix": "delay",
+		"body": [
+			"document.addEventListener('DOMContentLoaded', () => {",
+			"\t${1://trecho de código aqui}",
+			"});"
+		],
+		"description": "Adiciona delay pequeno"
+	},
+	"Delay maior": {
+		"scope": "javascript,typescript",
+		"prefix": "major-delay",
+		"body": [
+			"document.addEventListener('readystatechange', event => { ",
+      "\tif (event.target.readyState === \"complete\") {",
+      "\t\t${1://trecho de código aqui}",
+      "\t}",
+    	"});"
+		],
+		"description": "Adiciona delay maior"
+	},
+	"Função IIFE": {
+		"scope": "javascript,typescript",
+		"prefix": "iife",
+		"body": [
+			"(() => {",
+			"\t$1",	
+			"})()"
+		],
+		"description": "Adiciona função IIFE"
+	},
+	"Add StyleSheet": {
+		"scope": "javascript,typescript",
+		"prefix": "addstyle",
+		"body": [
+			"const addStyle = (styles) => {",
+      "\tconst css = styles,",
+      "\t\thead = document.head || document.getElementsByTagName('head')[0],",
+      "\t\tstyle = document.createElement('style');",
+      "\thead.appendChild(style);",
+      "\tstyle.setAttribute('type', 'text/css');",
+      "\tif (style.styleSheet) {",
+      "\t\t// This is required for IE8 and below.",
+      "\t\tstyle.styleSheet.cssText = css;",
+      "\t} else {",
+      "\t\tstyle.appendChild(document.createTextNode(css));",
+      "\t}",
+      "};"
+		],
+		"description": "Função responsável por adicionar folha de estilos à página que já está carregada"
+	}
+}
