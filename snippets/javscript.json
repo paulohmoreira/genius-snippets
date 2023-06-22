@@ -1,4 +1,44 @@
 {
+	"FTP Task": {
+    "prefix": "script-ftp",
+    "body": [
+      "<!-- ${1:descreva a tarefa} - GENIUSATD-${3:1234} -->",
+      "<!-- ${CURRENT_DATE}/$CURRENT_MONTH/$CURRENT_YEAR | ${2:Autor} -->",
+      "<script src=\"${4:https://legado.autoforce.com.br/plugins/$RELATIVE_FILEPATH}\"></script>"
+    ],
+    "description": "Template para inserir um script do FTP no autódromo"
+  },
+  "Inline Task": {
+    "prefix": "script-inline",
+    "body": [
+      "<!-- ${1:descreva a tarefa} - GENIUSATD-${3:1234} -->",
+      "<!-- ${CURRENT_DATE}/$CURRENT_MONTH/$CURRENT_YEAR | ${2:Autor} -->",
+      "<script>",
+      "\t$4",
+      "</script>"
+    ],
+    "description": "Template para inserir um script inline no autódromo"
+  },
+  "Styles FTP": {
+    "prefix": "styles-ftp",
+    "body": [
+      "<!-- ${1:descreva a tarefa} - GENIUSATD-${3:1234} -->",
+      "<!-- ${CURRENT_DATE}/$CURRENT_MONTH/$CURRENT_YEAR | ${2:Autor} -->",
+      "<link rel=\"stylesheet\" href=\"${4:https://legado.autoforce.com.br/plugins/$RELATIVE_FILEPATH}\">"
+    ],
+    "description": "Template para inserir um estilo do FTP no autódromo"
+  },
+  "Styles Inline": {
+    "prefix": "styles-inline",
+    "body": [
+      "<!-- ${1:descreva a tarefa} - GENIUSATD-${3:1234} -->",
+      "<!-- ${CURRENT_DATE}/$CURRENT_MONTH/$CURRENT_YEAR | ${2:Autor} -->",
+      "<style>",
+      "\t$4",
+      "</style>"
+    ],
+    "description": "Template para inserir um script inline no autódromo"
+  },
 	"Delay pequeno": {
 		"scope": "javascript,typescript",
 		"prefix": "delay",
