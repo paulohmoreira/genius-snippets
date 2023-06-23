@@ -3,6 +3,16 @@
   "displayName": "Genius Snippets",
   "description": "Uma coleção de snippets para auxiliar no dia a dia de trabalho Genius.",
   "version": "0.0.1",
+  "publisher": "paulo.moreira",
+  "author": {
+    "name": "Paulo Moreira",
+    "email": "phmoreira37@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulohmoreira/genius-snippets.git"
+  },
+  "icon": "images/magic-lamp.png",
   "engines": {
     "vscode": "^1.79.0"
   },
